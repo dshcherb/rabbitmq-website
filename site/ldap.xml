@@ -255,6 +255,20 @@ limitations under the License.
             Default: <code>false</code>
           </p>
         </dd>
+        <dt><code>log_bind_credentials</code></dt>
+        <dd>
+          <p>
+            Select <code>true</code> for bind credentials to be displayed in
+            LDAP network traffic logs.
+          </p>
+          <p>
+            Select <code>false</code> for bind credentials to be hidden in
+            LDAP network traffic logs.
+          </p>
+          <p>
+            Default: <code>true</code>
+          </p>
+        </dd>
       </dl>
     </doc:section>
 
@@ -574,6 +588,7 @@ limitations under the License.
      {use_ssl,               false},
      {port,                  389},
      {log,                   false},
+     {log_bind_credentials,  true},
      {vhost_access_query,    {in_group,
                               "ou=${vhost}-users,ou=vhosts,dc=example,dc=com"}},
      {resource_access_query,
